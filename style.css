@@ -25,12 +25,14 @@ header {
 .general-header {
     display: flex;
     height: 100%;
+    justify-content: space-between;
     width: 100%;
     padding: 0.5em;
     align-items: center;
 } 
 
 .general-header h2 {
+    text-shadow: 0 0 5px white;
     font-weight: 400;
     color: white;
     font-family:"Montserrat", sans-serif;
@@ -62,6 +64,7 @@ a {
 }
 
 a:hover {
+    text-shadow: 0 0 5px white;
     transition-duration: 0.3s;
     color: white;
 }
@@ -84,8 +87,18 @@ footer {
 }
 
 footer p {
+    text-shadow: 0 0 5px white;
     font-weight: 400;
     color: white;
     font-family:"Montserrat", sans-serif;
     font-size: 1.3em;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
 }
