@@ -4,8 +4,88 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header .logo {
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    background-color: rgb(33, 32, 34);
+}
+
+
+
+.general-header {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;
+    align-items: center;
+} 
+
+.general-header h2 {
+    font-weight: 400;
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+
+.general-header h1 {
+    color: white;
+    border: 2px solid black;
     font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    background-color: rgb(80, 79, 79);
+    padding: 0.2em;
+    font-weight: 100;
+}
+
+a {
+    font-weight: 400;
+    font-size: 1.2em;
+    font-family:"Montserrat", sans-serif;
+    padding-right: 0.5em;
+    text-decoration: none;
+    color: gray;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    transition-duration: 0.3s;
+    color: white;
+}
+
+
+.logo-header {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: 0;
+    width: 100vw;
+    background-color: rgb(33, 32, 34);
+}
+
+footer p {
+    font-weight: 400;
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    font-size: 1.3em;
 }
