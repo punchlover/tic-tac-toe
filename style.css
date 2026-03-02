@@ -131,12 +131,18 @@ main p {
 }
 
 .box-cell {
+    display: flex;
     box-shadow: 0 0 5px rgb(49, 49, 49);
     border-radius: 30px;
     animation-name:box-cell ;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    font-family: "Pixelify Sans", sans-serif;
+    user-select: none;
 }
 
 @keyframes box-cell {
