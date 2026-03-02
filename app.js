@@ -15,13 +15,13 @@ function changeMove() {
 
 for (let cell of boxCell) {
     cell.addEventListener('click', function () {
-        if (cell.textContent == '' && isFinished == false) {
+        if (cell.textContent == '') {
             cell.textContent = curentMove
             if (isVictory()) return
             changeMove()
             cellOvered += 1
         }
-        if (cellOvered === 9 && isFinished == false) {
+        if (cellOvered === 9) {
             move.textContent = 'Итог: Ничья '
         }
     })
