@@ -1,5 +1,6 @@
-let boxCell = document.querySelectorAll('.box-cell')
-let move = document.querySelector('.move')
+const boxCell = document.querySelectorAll('.box-cell')
+const move = document.querySelector('.move')
+const clearButton = document.querySelector('.button-main')
 let curentMove = 'X'
 let cellOvered = 0
 
@@ -26,7 +27,15 @@ for (let cell of boxCell) {
         }
     })
 }
-let combinations = [
+
+clearButton.addEventListener('click', function () {
+    for (const cell of boxCell) {
+        cell.textContent = ''
+        move.textContent = 'Итог: '
+    }
+})
+
+const combinations = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
