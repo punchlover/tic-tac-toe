@@ -3,6 +3,7 @@ const move = document.querySelector('.move')
 const clearButton = document.querySelector('.button-main')
 let curentMove = 'X'
 let cellOvered = 0
+let isFinished = false
 
 function changeMove() {
     if (curentMove == 'X') {
@@ -16,7 +17,7 @@ function changeMove() {
 
 for (let cell of boxCell) {
     cell.addEventListener('click', function () {
-        if (cell.textContent == '') {
+        if (cell.textContent == '' && isFinished == false) {
             cell.textContent = curentMove
             if (isVictory()) return
             changeMove()
@@ -29,9 +30,11 @@ for (let cell of boxCell) {
 }
 
 clearButton.addEventListener('click', function () {
+    move.textContent = 'Итог: '
+    cellOvered = 0
+    isFinished = false
     for (const cell of boxCell) {
         cell.textContent = ''
-        move.textContent = 'Итог: '
     }
 })
 
@@ -48,6 +51,7 @@ const combinations = [
 function isVictory() {
     for (const combination of combinations) {
         if (checkWin(combination[0], combination[1], combination[2])) {
+            isFinished = true
             return true
         }
     }
