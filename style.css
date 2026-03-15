@@ -54,21 +54,6 @@ header {
     font-weight: 100;
 }
 
-a {
-    font-weight: 400;
-    font-size: 1.2em;
-    font-family:"Montserrat", sans-serif;
-    padding-right: 0.5em;
-    text-decoration: none;
-    color: gray;
-    transition-duration: 0.5s;
-}
-
-a:hover {
-    text-shadow: 0 0 5px white;
-    transition-duration: 0.3s;
-    color: white;
-}
 
 
 .logo-header {

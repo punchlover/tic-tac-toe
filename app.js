@@ -23,7 +23,7 @@ for (let cell of boxCell) {
             cellOvered += 1
         }
         if (cellOvered === 9) {
-            move.textContent = 'Итог: Ничья '
+            move.textContent = 'Итог: Ничья'
         }
     })
 }
@@ -46,7 +46,7 @@ const combinations = [
     [2, 5, 8]
 ]
 function isVictory() {
-    for (let combination of combinations) {
+    for (const combination of combinations) {
         if (checkWin(combination[0], combination[1], combination[2])) {
             return true
         }
